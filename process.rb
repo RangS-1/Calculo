@@ -1,5 +1,5 @@
 if ARGV.length != 3
-  STDERR.puts "Usage: ruby calculator.rb <operator> <operand1> <operand2>"
+  STDERR.puts "Maaf, ada sedikit kesalahan"
   exit 2
 end
 
@@ -26,7 +26,7 @@ when '%'
   result = a % b
 when '/'
   if b == 0.0
-    STDERR.puts "Nah"
+    STDERR.puts "Nah!"
     exit 4
   end
   result = a / b
