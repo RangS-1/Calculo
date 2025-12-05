@@ -1,8 +1,8 @@
-<center>
+<p align="center">
 
   # Calculo
 
-</center>
+</p>
 <img src="logo.png"/>
 
 Calculo, a Simple Calculator using PyQt5 and Ruby! Calculo is a calculator that have a basic arithmetic. The main reason i make this calculator is because my old laptop can't use calculator. Yeah, kinda weird right -_-?. And i want to know how to use a different programming language to make an applications. This Calculo is using PyQt5 for GUI and Ruby to process the calculator. 
