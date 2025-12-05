@@ -50,7 +50,7 @@ class Calculator(QWidget):
         ]
 
         positions = [(i+1, j) for i in range(5) for j in range(4)]
-        # add only as many positions as buttons
+        # tambah posisi sesuai jumlah buttons
         for position, (text, handler) in zip(positions, buttons):
             btn = QPushButton(text)
             btn.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
@@ -99,9 +99,8 @@ class Calculator(QWidget):
             self.display.setText('Ruby not found')
             return
 
-        # panggil calculator.rb dengan tiga argumen: operator op1 op2
+        # panggil process.rb 
         try:
-            # Gunakan list args untuk mencegah injection shell
             proc = subprocess.run(
                 ['ruby', RUBY_SCRIPT, self.op, str(self.op1), str(op2)],
                 capture_output=True,
@@ -117,16 +116,15 @@ class Calculator(QWidget):
         stderr = proc.stderr.strip()
 
         if proc.returncode != 0:
-            # Ruby script melaporkan error
+            # jikalau error
             if stderr:
                 self.display.setText('Err: ' + stderr)
             else:
                 self.display.setText('Err')
             return
 
-        # tampilkan hasil dari stdout
         self.display.setText(stdout)
-        # reset state
+        # reset
         self.op1 = None
         self.op = None
         self.tunggu2 = False
