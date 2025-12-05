@@ -7,7 +7,7 @@ from PyQt5.QtWidgets import (
 from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import Qt
 
-RUBY_SCRIPT = 'calculator.rb'
+RUBY_SCRIPT = 'process.rb'
 
 class Calculator(QWidget):
     def __init__(self):
