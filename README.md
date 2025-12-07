@@ -17,6 +17,13 @@ Inspirations: <a href="https://www.youtube.com/@pythonproject940">Python Project
 
 -------------
 
+## Requirements
+
+```
+ --> Python PyQt5 or PyQt6
+ --> Ruby Latest Version
+```
+
 ## Linux Installation
 
 You can download Calculo by cloning the [Git Repo](https://github.com/RangS-1/Calculo.git) and simply installing its requirements:
